@@ -1,4 +1,4 @@
-FROM node:current-apline
+FROM node:current-alpine3.13
 
 # create the app directory
 WORKDIR /app
