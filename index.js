@@ -20,7 +20,7 @@ client.on('guildMemberAdd', member => {
         referrerPolicy: 'no-referrer',
         body: JSON.stringify({ discord_id: member.id })
     }).then(response => {
-        console.log(response);
+        console.log(`Code: ${response.status}, User: ${member.nickname}`);
     });
 });
 
