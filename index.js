@@ -34,7 +34,7 @@ client.on('guildMemberAdd', member => {
 client.on('message', message => {
 
     // message was sent in wrong channel 
-    if (message.channel.id !== process.env.ADMIN_CHANNEl) {
+    if (message.channel.id !== process.env.ADMIN_CHANNEL) {
         return;
     }
 
